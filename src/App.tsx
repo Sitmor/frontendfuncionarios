@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+import HomePage from './Views/Test/Index'
+import Login from './Views/Test/Login'
+import Configuraciones from './Views/Test/Configuracion'
+import GestionAgenda from './Views/Test/GestionAgenda'
+import GestionPacientes from './Views/Test/GestionPacientes'
+import Informes from './Views/Test/Informes'
+import Recaudacion from './Views/Test/RecaudacionFromScratch'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" Component={Login} />
+        <Route path="/" Component={Login} />
+        <Route path="/home" Component={Login} />
+        <Route path="/homepage" Component={HomePage} />
+        <Route path="/configuracion" Component={Configuraciones} />
+        <Route path="/gestionagenda" Component={GestionAgenda} />
+        <Route path="/gestionpacientes" Component={GestionPacientes} />
+        <Route path="/informes" Component={Informes} />
+        <Route path="/recaudacion" Component={Recaudacion} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
 export default App;
