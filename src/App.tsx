@@ -4,10 +4,10 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './Views/Test/Index'
 import Login from './Views/Test/Login'
 import Configuraciones from './Views/Test/Configuracion'
-import GestionAgenda from './Views/Test/GestionAgenda'
-import GestionPacientes from './Views/Test/GestionPacientes'
+import GestionAgenda from './Views/Test/GestionAgendaCalendarFixed'
+import GestionPacientes from './Views/Test/GestionPacientesRedesigned'
 import Informes from './Views/Test/Informes'
-import Recaudacion from './Views/Test/RecaudacionFromScratch'
+import Recaudacion from './Views/Test/Recaudacion'
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
         <Route path="/gestionagenda" Component={GestionAgenda} />
         <Route path="/gestionpacientes" Component={GestionPacientes} />
         <Route path="/informes" Component={Informes} />
-        <Route path="/recaudacion" Component={Recaudacion} />
+        <Route path="/rec" Component={Recaudacion} />
       </Routes>
     </BrowserRouter>
   );

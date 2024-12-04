@@ -38,7 +38,7 @@ const Index: React.FC = () => {
        </button>
       </li>
       <li className="nav-item">
-       <button className="nav-link" onClick={() => {navigate("/reacaudacion")}}>
+       <button className="nav-link" onClick={() => {navigate("/rec")}}>
         Recaudación
        </button>
       </li>
@@ -85,7 +85,7 @@ const Index: React.FC = () => {
        <p className="card-text">
         Registre pagos y genere comprobantes para los médicos.
        </p>
-       <button className="btn btn-success" onClick={() => {navigate("/reacaudacion")}}>
+       <button className="btn btn-success" onClick={() => {navigate("/rec")}}>
         Ver Recaudación
        </button>
       </div>
