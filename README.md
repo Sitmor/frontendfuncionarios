@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Integrantes: 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Andres Riveros - 202073556-5\
+Constanza Alvarado - 201973521-7\
+Felipe Ferrada - 201973606-K\
+Martin Muñoz - 201904632-2
+
+# Sistema de Gestión Médica - Front-End Funcionarios (Caso 20)
 
 ## Available Scripts
 
